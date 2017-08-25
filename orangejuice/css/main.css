@@ -1,180 +1,262 @@
- /** overall rules **/
-* {
-    font-family: 'Encode Sans', sans-serif;
-}
-/** gets ride or top gap **/
-body {
-    margin: 0;
-    padding: 0;
-}
+    /** overall rules **/
+     body {
+        width: 960px
+        height: auto;
+        }
 
-/** top navbar **/
-div.topnav {
-    overflow: hidden;
-    background-color: orange;
-    max-width: 100%
-}
+    * {
+        font-family: 'Encode Sans', sans-serif;
+    }
 
-div.rtnav, li a {
-    padding-top: 9px;
-    margin-right: 20px;
-}
+    /** top navbar **/
+    div.topnav {
+        overflow: auto;
+        background-color: orange;
+    }
 
-div.topnav {
-    padding: 15px 50px 31px 0;
-}
+    /** Navbar Fonts**/
+    li.orange, div.rtnav, li a  {
+        float: right;
+        color: antiquewhite;
+        font-size: 15px;
+        list-style: none;
+        text-decoration: none;
+        padding: 10px;
+        margin-right: 35px;
+    }
 
-/** Navbar Fonts**/
-li.orange, div.rtnav, li a  {
-    float: right;
-    color: antiquewhite;
-    font-size: 17px;
-    list-style: none;
-    text-decoration: none;
-}
+    /** heart **/
+    i.fa-heart-o {
+        color: white;
+        font-size: 38px;
+        float: left;
+        margin-top: 5px;
+        padding-left: 40px;
+    }
 
-/** heart **/
-i.fa-heart-o {
-    color: white;
-    font-size: 38px;
-    float: left;
-    margin-top: 5px;
-    padding-left: 54px;
-}
+    /** Orange **/
+    li.orange {
+        float: left;
+        font-size: 40px;
+        padding: 0 10px 20px 0;
+    }
+    li.orange sup {
+        font-size: 12px;
+        color: white;
+    }
 
-/** Orange **/
-li.orange {
-    float: left;
-    font-size: 40px;
-    padding-left: 2px;
-}
-li.orange sup {
-    font-size: 12px;
-}
+    li.orange span {
+        color: white;
+        font-weight: 900;
+    }
 
-li.orange span {
-    color: white;
-    font-weight: 900;
-}
+    /** Rt navbar **/
+    /** swithed order or nav **/
+    div.rtnav li {
+        float: left;
+        margin-right: 23px
+    }
 
-/** Rt navbar **/
-/** swithed order or nav **/
-div.rtnav li {
-    float: left;
-    margin-right: 23px
-}
+    /** Hover **/
+    div.topnav a:hover, a:active {
+        color: lightblue;
+    }
+    /** Search Bar **/
+    form {
+        float: right;
+        padding-right: 120px;
 
-/** Hover **/
-div.topnav a:hover, a:active {
-    color: lightblue;
-}
-/** Search Bar **/
-form {
-    float: right;
-    padding-right: 120px;
+    }
 
-}
-/** Link searchbar & Icon **/
-input[type=text], i.fa-search {
-    box-sizing: border-box; 
-    border: 2px solid gainsboro;
-    font-size: 16px;
-    background-color: gainsboro;
-    margin-top: 2px;
-}
+    /** search bar **/
+    #searchbar {
+        display: block;
+        margin-top: 5px;
+    }
 
-input[type=text] {
-    width: 203px;
-    display: inline-block;
-    border-radius: 0 0 2px 2px;
-    padding: 20px 20px 20px 25px;
-}
+    /** Link searchbar & Icon **/
+    input[type=text] {
+        border: 2px solid gainsboro;
+        font-size: 19px;
+        background-color: gainsboro;
+        padding: 13px 106px 13px 18px;
+    }
 
-i.fa-search {
-    color: grey;
-    font-size: 18px;
+    .fa-search {
+        color: grey;
+        font-size: 18px;
+        display: block;
+        float: right;
+        clear: right;
+        border-radius: 2px 2px 0px 0px;
+        padding: 21px;
+    }
+
+    /** main secttion **/
+    #main_section {
+        display: inline-block;
+        background-color: white;
+    }
+
+    /** Main Orange Box **/
+    .hero_image {
     display: block;
-    float: right;
-    clear: right;
-    border-radius: 2px 2px 0px 0px;
-    padding: 20.5px;
-}
+    }
 
-/** Main Orange Box **/
-div.hero-image {
-     margin: 100px 50px 155px 40px;
-}
+    img.one {
+        width: 41%;
+        margin-top: 5%
+    }
+        
+    /** Main Paragraph **/
+    .main_text { 
+        display: block;
+        position: relative;
+        bottom: 367px;
+        right: -4%;
+        left: -6%;
+        color: burlywood;
+        font-size: 51px;
+        float: right;
+    }
 
-img.one {
-    height: 45%;
-    width: 45%;
-}
+    /** Main Span fonts **/
+    span.orange {
+        color: orange;
+        font-weight: bolder;
+    }
 
-/** Main Paragraph **/
-div .maintext { 
-    color: burlywood;
-    font-size: 47px;
-    float: right;
-    margin: 65px 67px 50px 0;
-}
+    span.web-app {
+        font-weight: bold; 
+        color:lightblue
+    }
 
-/** Main Span fonts **/
-span.orange {
-    color: orange;
-    font-weight:bold;
-}
+    sup {
+        color: orange;
+        font-size: small;
 
-span.web-app {
-    font-weight: bold; 
-    color:lightblue
-}
+    }
 
-sup {
-    color: orange;
-    font-size: small;
-}
+    /** buttons **/
+    .buttons {
+        text-align: center;
+    }
 
-/** buttons **/
-.button {
-    background-color: orange;
-    border: none;
-    color: antiquewhite;
-    padding: 23px 70px 23px 70px;
-    margin: 0 40px 0 10px;
-    font-size: 16px;
-    cursor: pointer;  
-}
-/** moves buttons to center right **/
-p.buttons {
-    margin: -131px 30px 16px 70px;
-    padding: 0 0 0 600px;
-}
+    .button {
+        background-color: orange;
+        border: none;
+        color: antiquewhite;
+        padding: 23px 70px 23px 70px;
+        margin-left: 74px;
+        font-size: 16px;
+        cursor: pointer;  
+    }
+    /** moves buttons to center right **/
+    /** button2 **/
+    p .button2 {background-color: lightblue;
+        padding:21.5px 37px;
+    }
+    p.buttons {
+        text-align: left;
+       } 
+    /** Button Hover **/
+    p .button:hover {background-color: chocolate}
+    p .button2:hover {background-color: steelblue}
 
-/** button2 **/
-p .button2 {background-color: lightblue;}
+    p .button:active {
+        background-color: #3e8e41
+        transform: translateY(4px);
+    }
 
-p .button2 {
-    padding:23px 60px 23px 60px;
-    margin: 0 0 0 10px
-}
+    /** Footer **/
+    div.footer {
+        width: 97.5%;
+        height: 60px;
+        padding: 17px;
+        margin-top: 119px;
+        background-color: lightblue;
+    }
+
+/** iphone 6 **/
+@media (max-width: 1200px){
+    body {
+        width: 588px;
+        margin: 0 auto;   
+    }
+    img.one {
+        width: 96%
+    }
+
+    i.fa-heart-o {
+        font-size: 55px;
+        margin-top: 24px;
+        padding-left: 51px;
+    }
+
+    li.orange {
+        float: left;
+        font-size: 67px;
+        padding-right: 10px 80px 10px 0;
+        margin-right: 59px;
+    }
     
-/** Button Hover **/
-p .button:hover {background-color: chocolate}
-p .button2:hover {background-color: steelblue}
+     div.rtnav, li a {
+        font-size: 25px;
+        float: right;
+        color: antiquewhite;
+        list-style: none;
+        text-decoration: none;
+        padding: 0 19px 12px 19px;
+        margin-right: -11px;
+    }
+    .mobile {
+        margin-left: 56px;
+        margin-right: 60px;
+    }
+    div#searchbar {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    input[type=text] {
+        font-size: 33px;
+    }
 
-p .button:active {
-    background-color: #3e8e41
-    transform: translateY(4px);
-}
+    form.searchbar {
+        padding-right: 65px;
+    }
+    div.main_text {
+        display: block;
+        position: relative;
+        text-align: center;
+        bottom: -9px;
+        right: -16px;
+        color: burlywood;
+        font-size: 40px;
+        float: none;
+    }
+    .button {
+        font-size: 25px;
+        margin-top: 9px;
+        margin-left: 10%;
+        padding: 40px;
+        text-align: center;
+    }
 
-/** Footer **/
-div.footer {
-    width: 100%;
-    height: 80px;
-    padding: 17px;
-    background-color: lightblue;
-    text-align: center;
-}
+    p .button2 {
+        background-color: lightblue;
+        padding: 39.5px 21px;
+        margin-left: 11px;
+    }
+    div.footer {
+        width: 89.5%;
+        height: 60px;
+        padding: 28px;
+        margin-top: 27px;
+        background-color: lightblue;
+        float: left;
+    }
+ }   
+
 
 
 
